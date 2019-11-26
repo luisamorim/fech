@@ -1,0 +1,15 @@
+<div class="fechamentosContainer">
+	
+	
+	<!-- SELECT -->
+	<div class="form-group">
+		<label for="fechamentoSelect">Selecione o fechamento e escolha as dezenas:</label>
+		<select class="form-control"
+			ng-options="fechamento.descricao for fechamento in fechamentos"
+			ng-model="fechamentoSelecionado" ng-change="limpar()">
+		</select>
+	</div>
+	
+	
+
+</div>
