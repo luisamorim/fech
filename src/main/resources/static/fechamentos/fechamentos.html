@@ -10,6 +10,32 @@
 		</select>
 	</div>
 	
+	<div class="volanteFechamento" class="border">
+		<div ng-repeat="item in itens" class="d-inline-block">
+			<button 
+				class="buttonFechamento"
+				ng-click="check(item)"
+				ng-class="item.color"
+				>{{item.num}}</button>
+		</div>
+	</div>
+	
+	
+	<div class="form-inline mt-3">
+		<div class="form-group">
+			<button class="btn btn-info" ng-click="palpite()">Palpite</button>
+		</div>
+		<div class="form-group ml-2">
+			<button class="btn btn-warning" ng-click="limpar()">Limpar</button>
+		</div>
+	</div>
+	
+	
+	<div class="form-group mt-5">
+		<label>Selecionadas: </label>
+		<label>{{selecionadas}}</label>
+	</div>
+	
 	
 
 </div>
